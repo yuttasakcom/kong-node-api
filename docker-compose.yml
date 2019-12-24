@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+  node-api:
+    image: yuttasakcom/node-api
+    build: .
+    environment: 
+      - PORT=9001
+    ports:
+      - "9001:9001"
+    restart:  always

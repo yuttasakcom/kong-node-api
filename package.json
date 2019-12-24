@@ -1,0 +1,35 @@
+{
+  "name": "kong-node-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build": "babel src/index.js --out-dir build --presets=@babel/env",
+    "start": "node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuttasakcom/kong-node-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuttasakcom/kong-node-api/issues"
+  },
+  "homepage": "https://github.com/yuttasakcom/kong-node-api#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.7.0",
+    "core-js": "^3.6.0",
+    "koa": "^2.11.0",
+    "koa-router": "^7.4.0",
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/preset-env": "^7.7.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
